@@ -48,7 +48,7 @@ const getWeather = weather =>{
     weatherContainer.innerHTML = `
                 
     <div class="weather-status text-white text-center">
-        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+        <img src="https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png" alt="">
         <h1>${weather.name}</h1>
         <h3><span>${Math.round(weather.main.temp-273)}</span>&deg;C</h3>
         <h1 class="lead">${weather.weather[0].main}</h1>
